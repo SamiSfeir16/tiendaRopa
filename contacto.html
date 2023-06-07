@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SamStore - Contacto</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Poppins:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html">
+            <h1>Sam<span class="header__span"> Store</span></h1>
+        </a>
+    </header>
+
+    <div class="nav-contenedor">
+        <nav class="navegacion contenedor">
+            <a class="navegacion__enlace" href="index.html">Inicio</a>
+            <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+            <a class="navegacion__enlace" href="tienda.html">Tienda</a>
+            <a class="navegacion__enlace" href="blog.html">Blog</a>
+            <a class="navegacion__enlace" href="galeria.html">Galeria</a>
+            <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+
+    <main class="contenido-principal contenedor">
+        <h2 class="centrar-texto">Contacto</h2>
+
+        <form class="formulario">
+            <fieldset>
+                <legend>Tus Datos</legend>
+                <div class="campo">
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" placeholder="Su Nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="asunto">Asunto: </label>
+                    <input type="text" id="asunto" placeholder="Su Asunto" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-Mail: </label>
+                    <input type="email" id="email" placeholder="Su E-Mail" required>
+                </div>
+
+                <div class="campo">
+                    <label for="tel">Teléfono: </label>
+                    <input type="tel" id="tel" placeholder="Su Teléfono" required>
+                </div>
+
+                <div class="campo">
+                    <label for="msj">Mensaje: </label>
+                    <textarea id="msj" required></textarea>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>País</legend>
+                <div class="campo">
+                    <label for="pais">País: </label>
+                    <select id="pais">
+                        <option selected disabled>--Seleccione--</option>
+                        <option value="CO">Colombia</option>
+                        <option value="ES">España</option>
+                        <option value="AR">Argentina</option>
+                        <option value="PR">Perú</option>
+                        <option value="CL">Chile</option>
+                        <option value="MX">México</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Información Extra</legend>
+                <div class="campo">
+                    <label for="cliente">Cliente</label>
+                    <input type="radio" id="cliente" name="tipo" >
+                </div>
+
+                <div class="campo">
+                    <label for="proveedor">Proveedor</label>
+                    <input type="radio" id="proveedor" name="tipo">
+                </div>
+
+                <div class="campo">
+                    <label for="categorias">Categoria de Interés</label>
+                    <input list="categorias" name="categorias" required>
+                    <datalist id="categorias">
+                        <option value="Hombre">
+                        <option value="Mujer">
+                        <option value="Niños">
+                        <option value="Unisex">
+                    </datalist>
+                </div>
+            </fieldset>
+            
+            <input class="btn btn--secundario" type="submit" value="Enviar">
+        </form>
+        
+    </main>
+
+    <footer class="site-footer">
+        <div class="contenedor grid-footer">
+            <div>
+                <h3>Categorías</h3>
+                <nav class="footer-menu">
+                    <a href="#" class="footer-menu__enlace">Hombre</a>
+                    <a href="#" class="footer-menu__enlace">Mujer</a>
+                    <a href="#" class="footer-menu__enlace">Niños</a>
+                </nav>
+            </div>
+
+            <div>
+                <h3>Sobre Nosotros</h3>
+                <nav class="footer-menu">
+                    <a href="#" class="footer-menu__enlace">Nuestra Historia</a>
+                    <a href="#" class="footer-menu__enlace">Misión, Visión y Valores</a>
+                    <a href="#" class="footer-menu__enlace">Carreras</a>
+                    <a href="#" class="footer-menu__enlace">Política de Privacidad</a>
+                    <a href="#" class="footer-menu__enlace">Términos del Servicio</a>
+                </nav>
+            </div>
+
+            <div>
+                <h3>Soporte</h3>
+                <nav class="footer-menu">
+                    <a href="#" class="footer-menu__enlace">Preguntas Frecuentes</a>
+                    <a href="#" class="footer-menu__enlace">Ayuda en línea</a>
+                    <a href="#" class="footer-menu__enlace">Confianza y Seguridad</a>
+                </nav>
+            </div>
+        </div>
+        <p class="copyright">Todos los Derechos Reservados, Sam Store</p>
+    </footer>
+
+</body>
+
+</html>
